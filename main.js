@@ -20,7 +20,7 @@ document.write(
     "<br><strong>Ejercicio 4</strong><br>Realizar un programa que permita decir si un numero es primo. Un numero es primo si solo es divisible por el valor 1 y por si mismo. Ayuda: Usar la operacion de modulo. Los numeros solo poseen divisores hasta la mitad del valor del mismo. Ej: 50 tiene como divisores 1, 2, 5, 10 y 5. No es primo. Con tener mas de 2 divisores el numero ya no es primo."
 );
 
-document.write("<br><strong>Ejercicio 5</strong><br>");
+document.write("<br><strong>Ejercicio 5</strong><br>Realizar un programa que permita dado un numero, mostrar todos sus divisores.");
 
 document.write("<br><strong>Ejercicio 6</strong><br>");
 
@@ -51,7 +51,6 @@ alert("A continuación, lee todos los Ejercicios y luego ingresa el numero del E
 setTimeout(function () {
     let NumeroEjercicio = prompt("Ingresa el numero del Ejercicios que deseas Observar");
     switch (NumeroEjercicio) {
-        
         /*-----------------------------------  Ejercicio 1  --------------------------------*/
         /*Realizar un programa que permita el ingreso de un numero y muestre su tabla de
 multiplicar (Los primeros 10 multiplos).*/
@@ -172,11 +171,23 @@ numero ya no es primo.*/
 https://medium.com/@holasoymalva/como-saber-si-un-n%C3%BAmero-es-primo-o-no-en-javascript-2edb798526d4
 y lo logre entender y pues tome parte de la informacion*/
 
+        /*-----------------------------------  Ejercicio 5  --------------------------------*/
+        /*Realizar un programa que permita dado un numero, mostrar todos sus divisores.*/
+
         case "5":
             alert("Bienvenidos al Ejercicio 5");
-            alert("");
+            alert("Realizar un programa que permita dado un numero, mostrar todos sus divisores.");
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            let numeroEjercicio5 = parseInt(prompt("Ingrese un número:"));
+            let divisores = [];
+            for (let i = 1; i <= numeroEjercicio5; i++) {
+                if (numeroEjercicio5 % i === 0) {
+                    divisores.push(i);
+                }
+            }
+            console.log(`Los divisores de ${numeroEjercicio5} son: ${divisores.join(", ")}`);
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
         case "6":
