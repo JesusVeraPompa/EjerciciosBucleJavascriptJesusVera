@@ -4,12 +4,12 @@
 /*Realizar un programa que permita el ingreso de un numero y muestre su tabla de
 multiplicar (Los primeros 10 multiplos).*/
 
-let numero = parseInt(prompt("Ingrese un número:"));
+let numeroEjercicio1 = parseInt(prompt("Ingrese un número:"));
 
-console.log(`Tabla de multiplicar del número ${numero}`);
+console.log(`Tabla de multiplicar del número ${numeroEjercicio1}`);
 
 for (let i = 1; i <= 10; i++) {
-    console.log(`${numero} x ${i} = ${numero * i}`);
+    console.log(`${numeroEjercicio1} x ${i} = ${numeroEjercicio1 * i}`);
 }
 
 /*-----------------------------------  Ejercicio 2  --------------------------------*/
@@ -19,13 +19,13 @@ acumulando. El ingreso de datos terminara cuando el usuario ingrese un valor 0.*
 let suma = 0;
 
 do {
-    let numero = parseInt(prompt("Ingrese un número (0 para terminar):"));
+    let numeroEjercicio2 = parseInt(prompt("Ingrese un número (0 para terminar):"));
 
-    if (numero === 0) {
+    if (numeroEjercicio2 === 0) {
         break;
     }
 
-    suma += numero;
+    suma += numeroEjercicio2;
 } while (true);
 
 console.log(`La suma de todos los números ingresados es: ${suma}`);
@@ -58,4 +58,32 @@ do {
     intentos++;
 } while (true);
 
+/*-----------------------------------  Ejercicio 4  --------------------------------*/
+/*Realizar un programa que permita decir si un numero es primo. Un numero es primo
+si solo es divisible por el valor 1 y por si mismo. Ayuda: Usar la operacion de modulo.
+Los numeros solo poseen divisores hasta la mitad del valor del mismo. Ej: 50 tiene
+como divisores 1, 2, 5, 10 y 25. No es primo. Con tener mas de 2 divisores el
+numero ya no es primo.*/
 
+let numeroEjercicio4 = parseInt(prompt("Ingrese un número:"));
+
+function esPrimo(numeroParam) {
+    for (var i = 2; i < numeroParam; i++) {
+      if (numeroParam % i === 0) {
+        return false;
+      }
+    }
+    return numeroParam !== 1;
+  }
+
+  if (esPrimo(numeroEjercicio4)) {
+    console.log(`${numeroEjercicio4} es un número primo.`);
+  } else {
+    console.log(`${numeroEjercicio4} no es un número primo.`);
+  }
+
+  /* Ojo este Ejercicio no lo entendi, pero busque informacion en
+  https://medium.com/@holasoymalva/como-saber-si-un-n%C3%BAmero-es-primo-o-no-en-javascript-2edb798526d4
+  y lo logre entender y pues tome parte de la informacion*/
+
+  
