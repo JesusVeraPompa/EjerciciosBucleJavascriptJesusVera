@@ -1,37 +1,105 @@
 "use strict";
 
-/*-----------------------------------  Ejercicio 1  --------------------------------*/
-/*Realizar un programa que permita el ingreso de un numero y muestre su tabla de
+//  Damos una Bienvenida
+alert("Hola Bienvenidos, Esta Aplicación Contiene 16 Ejercicios");
+
+//  Mostramos en pantalla todos los ejercicios
+document.write(
+    "<br><br><strong>Ejercicio 1</strong><br>Realizar un programa que permita el ingreso de un numero<br> y muestre su tabla de multiplicar (Los primeros 10 multiplos)."
+);
+
+document.write(
+    "<br><strong>Ejercicio 2</strong><br>Realizar un programa que permita el ingreso de numeros los cuales se tienen que ir acumulando. <br>El ingreso de datos terminara cuando el usuario ingrese un valor 0."
+);
+
+document.write(
+    "<br><strong>Ejercicio 3</strong><br>Realizar en juego de adivinar el numero del los ejercicios del tema anterior, en una variable guardar un numero que este en el rango 1 - 100. La persona debera poder ingresar numeros hasta adivinar el valor que se encuentre en dicha variable. Si el valor es menor al numero secreto, avisarle al usuario lo sucedido y pedirle nuevamente el ingreso de otro numero, realizar la misma accion pero en lugar de cuando es menor, si es que el numero ingresado es mayor. Asi sucesivamente hasta que el usuario adivine el numero secreto. Por ultimo mostrar un mensaje de felicitaciones y decirle en cuantos intentos lo ha realizado."
+);
+
+document.write(
+    "<br><strong>Ejercicio 4</strong><br>Realizar un programa que permita decir si un numero es primo. Un numero es primo si solo es divisible por el valor 1 y por si mismo. Ayuda: Usar la operacion de modulo. Los numeros solo poseen divisores hasta la mitad del valor del mismo. Ej: 50 tiene como divisores 1, 2, 5, 10 y 5. No es primo. Con tener mas de 2 divisores el numero ya no es primo."
+);
+
+document.write("<br><strong>Ejercicio 5</strong><br>");
+
+document.write("<br><strong>Ejercicio 6</strong><br>");
+
+document.write("<br><strong>Ejercicio 7</strong><br>");
+
+document.write("<br><strong>Ejercicio 8</strong><br>");
+
+document.write("<br><strong>Ejercicio 9</strong><br>");
+
+document.write("<br><strong>Ejercicio 10</strong><br>");
+
+document.write("<br><strong>Ejercicio 11</strong><br>");
+
+document.write("<br><strong>Ejercicio 12</strong><br>");
+
+document.write("<br><strong>Ejercicio 13</strong><br>");
+
+document.write("<br><strong>Ejercicio 14</strong><br>");
+
+document.write("<br><strong>Ejercicio 15</strong><br>");
+
+document.write("<br><strong>Ejercicio 16</strong><br>");
+
+//  Pedimos leer todos los ejercicios
+alert("A continuación, lee todos los Ejercicios y luego ingresa el numero del Ejercicio a Observar");
+
+//  Esperamos 1 segundos para que el usuario lea los ejercicios y pueda ingresar el numero del Ejercicio a Observar
+setTimeout(function () {
+    let NumeroEjercicio = prompt("Ingresa el numero del Ejercicios que deseas Observar");
+    switch (NumeroEjercicio) {
+        
+        /*-----------------------------------  Ejercicio 1  --------------------------------*/
+        /*Realizar un programa que permita el ingreso de un numero y muestre su tabla de
 multiplicar (Los primeros 10 multiplos).*/
 
-let numeroEjercicio1 = parseInt(prompt("Ingrese un número:"));
+        case "1":
+            alert("Bienvenidos al Ejercicio 1");
+            alert("Realizar un programa que permita el ingreso de un numero y muestre su tabla de multiplicar (Los primeros 10 multiplos).");
 
-console.log(`Tabla de multiplicar del número ${numeroEjercicio1}`);
+            let numeroEjercicio1 = parseInt(prompt("Ingrese un número:"));
 
-for (let i = 1; i <= 10; i++) {
-    console.log(`${numeroEjercicio1} x ${i} = ${numeroEjercicio1 * i}`);
-}
+            console.log(`Tabla de multiplicar del número ${numeroEjercicio1}`);
 
-/*-----------------------------------  Ejercicio 2  --------------------------------*/
-/*Realizar un programa que permita el ingreso de numeros los cuales se tienen que ir
+            for (let i = 1; i <= 10; i++) {
+                console.log(`${numeroEjercicio1} x ${i} = ${numeroEjercicio1 * i}`);
+            }
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        /*-----------------------------------  Ejercicio 2  --------------------------------*/
+        /*Realizar un programa que permita el ingreso de numeros los cuales se tienen que ir
 acumulando. El ingreso de datos terminara cuando el usuario ingrese un valor 0.*/
 
-let suma = 0;
+        case "2":
+            alert("Bienvenidos al Ejercicio 2");
+            alert(
+                "Realizar un programa que permita el ingreso de numeros los cuales se tienen que ir acumulando. El ingreso de datos terminara cuando el usuario ingrese un valor 0."
+            );
 
-do {
-    let numeroEjercicio2 = parseInt(prompt("Ingrese un número (0 para terminar):"));
+            let suma = 0;
 
-    if (numeroEjercicio2 === 0) {
-        break;
-    }
+            do {
+                let numeroEjercicio2 = parseInt(prompt("Ingrese un número (0 para terminar):"));
 
-    suma += numeroEjercicio2;
-} while (true);
+                if (numeroEjercicio2 === 0) {
+                    break;
+                }
 
-console.log(`La suma de todos los números ingresados es: ${suma}`);
+                suma += numeroEjercicio2;
+            } while (true);
 
-/*-----------------------------------  Ejercicio 3  --------------------------------*/
-/*Realizar un programa de juego de adivinar el numero, en una
+            console.log(`La suma de todos los números ingresados es: ${suma}`);
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        /*-----------------------------------  Ejercicio 3  --------------------------------*/
+        /*Realizar en juego de adivinar el numero del los ejercicios del tema anterior, en una
 variable guardar un numero que este en el rango 1 - 100. La persona debera poder
 ingresar numeros hasta adivinar el valor que se encuentre en dicha variable. Si el
 valor es menor al numero secreto, avisarle al usuario lo sucedido y pedirle
@@ -40,50 +108,158 @@ cuando es menor, si es que el numero ingresado es mayor. Asi sucesivamente hasta
 que el usuario adivine el numero secreto. Por ultimo mostrar un mensaje de
 felicitaciones y decirle en cuantos intentos lo ha realizado.*/
 
-let numeroSecreto = Math.floor(Math.random() * 100) + 1;
-let intentos = 0;
+        case "3":
+            alert("Bienvenidos al Ejercicio 3");
+            alert(
+                "Realizar en juego de adivinar el numero del los ejercicios del tema anterior, en una variable guardar un numero que este en el rango 1 - 100. La persona debera poder ingresar numeros hasta adivinar el valor que se encuentre en dicha variable. Si el valor es menor al numero secreto, avisarle al usuario lo sucedido y pedirle nuevamente el ingreso de otro numero, realizar la misma accion pero en lugar de cuando es menor, si es que el numero ingresado es mayor. Asi sucesivamente hasta que el usuario adivine el numero secreto. Por ultimo mostrar un mensaje de felicitaciones y decirle en cuantos intentos lo ha realizado."
+            );
+            alert("Ver el Resultado por Consola F12.");
 
-do {
-    let numeroUsuario = parseInt(prompt("Adivina el número secreto (entre 1 y 100):"));
+            let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+            let intentos = 0;
 
-    if (numeroUsuario < numeroSecreto) {
-        console.log("El número ingresado es menor al número secreto.");
-    } else if (numeroUsuario > numeroSecreto) {
-        console.log("El número ingresado es mayor al número secreto.");
-    } else {
-        console.log("Felicitaciones! Has adivinado el número secreto en", intentos, "intentos.");
-        break;
-    }
+            do {
+                let numeroUsuario = parseInt(prompt("Adivina el número secreto (entre 1 y 100):"));
 
-    intentos++;
-} while (true);
+                if (numeroUsuario < numeroSecreto) {
+                    console.log("El número ingresado es menor al número secreto.");
+                } else if (numeroUsuario > numeroSecreto) {
+                    console.log("El número ingresado es mayor al número secreto.");
+                } else {
+                    console.log("Felicitaciones! Has adivinado el número secreto en", intentos, "intentos.");
+                    break;
+                }
 
-/*-----------------------------------  Ejercicio 4  --------------------------------*/
-/*Realizar un programa que permita decir si un numero es primo. Un numero es primo
+                intentos++;
+            } while (true);
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        /*-----------------------------------  Ejercicio 4  --------------------------------*/
+        /*Realizar un programa que permita decir si un numero es primo. Un numero es primo
 si solo es divisible por el valor 1 y por si mismo. Ayuda: Usar la operacion de modulo.
 Los numeros solo poseen divisores hasta la mitad del valor del mismo. Ej: 50 tiene
 como divisores 1, 2, 5, 10 y 25. No es primo. Con tener mas de 2 divisores el
 numero ya no es primo.*/
 
-let numeroEjercicio4 = parseInt(prompt("Ingrese un número:"));
+        case "4":
+            alert("Bienvenidos al Ejercicio 4");
+            alert(
+                "Realizar un programa que permita decir si un numero es primo. Un numero es primo si solo es divisible por el valor 1 y por si mismo. Ayuda: Usar la operacion de modulo. Los numeros solo poseen divisores hasta la mitad del valor del mismo. Ej: 50 tiene como divisores 1, 2, 5, 10 y 5. No es primo. Con tener mas de 2 divisores el numero ya no es primo."
+            );
 
-function esPrimo(numeroParam) {
-    for (var i = 2; i < numeroParam; i++) {
-      if (numeroParam % i === 0) {
-        return false;
-      }
+            let numeroEjercicio4 = parseInt(prompt("Ingrese un número:"));
+
+            function esPrimo(numeroParam) {
+                for (var i = 2; i < numeroParam; i++) {
+                    if (numeroParam % i === 0) {
+                        return false;
+                    }
+                }
+                return numeroParam !== 1;
+            }
+
+            if (esPrimo(numeroEjercicio4)) {
+                console.log(`${numeroEjercicio4} es un número primo.`);
+            } else {
+                console.log(`${numeroEjercicio4} no es un número primo.`);
+            }
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+        /* Ojo este Ejercicio no lo entendi, pero busque informacion en
+https://medium.com/@holasoymalva/como-saber-si-un-n%C3%BAmero-es-primo-o-no-en-javascript-2edb798526d4
+y lo logre entender y pues tome parte de la informacion*/
+
+        case "5":
+            alert("Bienvenidos al Ejercicio 5");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "6":
+            alert("Bienvenidos al Ejercicio 6");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "7":
+            alert("Bienvenidos al Ejercicio 7");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "8":
+            alert("Bienvenidos al Ejercicio 8");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "9":
+            alert("Bienvenidos al Ejercicio 9");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "10":
+            alert("Bienvenidos al Ejercicio 10");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "11":
+            alert("Bienvenidos al Ejercicio 11");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "12":
+            alert("Bienvenidos al Ejercicio 12");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "13":
+            alert("Bienvenidos al Ejercicio 13");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "14":
+            alert("Bienvenidos al Ejercicio 14");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "15":
+            alert("Bienvenidos al Ejercicio 15");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        case "16":
+            alert("Bienvenidos al Ejercicio 16");
+            alert("");
+
+            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            break;
+
+        default:
+            alert("Debes ingresar un numero del 1 al 13 para ver el Ejercicio, vuelve a cargar la pagina con F5");
+            break;
     }
-    return numeroParam !== 1;
-  }
+}, 1000);
 
-  if (esPrimo(numeroEjercicio4)) {
-    console.log(`${numeroEjercicio4} es un número primo.`);
-  } else {
-    console.log(`${numeroEjercicio4} no es un número primo.`);
-  }
-
-  /* Ojo este Ejercicio no lo entendi, pero busque informacion en
-  https://medium.com/@holasoymalva/como-saber-si-un-n%C3%BAmero-es-primo-o-no-en-javascript-2edb798526d4
-  y lo logre entender y pues tome parte de la informacion*/
-
-  
+//console.log(object);
