@@ -31,3 +31,31 @@ do {
 console.log(`La suma de todos los números ingresados es: ${suma}`);
 
 /*-----------------------------------  Ejercicio 3  --------------------------------*/
+/*Realizar un programa de juego de adivinar el numero, en una
+variable guardar un numero que este en el rango 1 - 100. La persona debera poder
+ingresar numeros hasta adivinar el valor que se encuentre en dicha variable. Si el
+valor es menor al numero secreto, avisarle al usuario lo sucedido y pedirle
+nuevamente el ingreso de otro numero, realizar la misma accion pero en lugar de
+cuando es menor, si es que el numero ingresado es mayor. Asi sucesivamente hasta
+que el usuario adivine el numero secreto. Por ultimo mostrar un mensaje de
+felicitaciones y decirle en cuantos intentos lo ha realizado.*/
+
+let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let intentos = 0;
+
+do {
+    let numeroUsuario = parseInt(prompt("Adivina el número secreto (entre 1 y 100):"));
+
+    if (numeroUsuario < numeroSecreto) {
+        console.log("El número ingresado es menor al número secreto.");
+    } else if (numeroUsuario > numeroSecreto) {
+        console.log("El número ingresado es mayor al número secreto.");
+    } else {
+        console.log("Felicitaciones! Has adivinado el número secreto en", intentos, "intentos.");
+        break;
+    }
+
+    intentos++;
+} while (true);
+
+
