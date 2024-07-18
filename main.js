@@ -22,7 +22,9 @@ document.write(
 
 document.write("<br><strong>Ejercicio 5</strong><br>Realizar un programa que permita dado un numero, mostrar todos sus divisores.");
 
-document.write("<br><strong>Ejercicio 6</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 6</strong><br>Dado un array de 10 elementos, realizar un programa que recorra ese array y muestre un mensaje por consola con cada uno de los elementos del array."
+);
 
 document.write("<br><strong>Ejercicio 7</strong><br>");
 
@@ -190,9 +192,25 @@ y lo logre entender y pues tome parte de la informacion*/
             alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 5  --------------------------------*/
+        /*Dado un array de 10 elementos, realizar un programa que recorra ese array y
+muestre un mensaje por consola con cada uno de los elementos del array.*/
+
         case "6":
             alert("Bienvenidos al Ejercicio 6");
-            alert("");
+            alert(
+                "Dado un array de 10 elementos, realizar un programa que recorra ese array y muestre un mensaje por consola con cada uno de los elementos del array."
+            );
+
+            /*Dado un array de 10 elementos, realizar un programa que recorra ese array y
+muestre un mensaje por consola con cada uno de los elementos del array.*/
+
+            let arrayEjercicio6 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+            for (let i = 0; i < arrayEjercicio6.length; i++) {
+                console.log(`Elemento ${i + 1}: ${arrayEjercicio6[i]}`);
+                alert("Mostrando el Resultado por Consola F12.");
+            }
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
