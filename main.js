@@ -34,7 +34,9 @@ document.write(
     "<br><strong>Ejercicio 8</strong><br>Dado un array con al menos 5 objetos comprendidos por un grupo familiar, cada objeto representa a 1 persona con al menos 4 propiedades, realizar un programa que muestre un mensaje de presentacion por cada elemento del array."
 );
 
-document.write("<br><strong>Ejercicio 9</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 9</strong><br>Dado un array de 10 numeros, realizar un programa que recorra el array y solo muestre los numeros impares."
+);
 
 document.write("<br><strong>Ejercicio 10</strong><br>");
 
@@ -263,9 +265,22 @@ que muestre un mensaje de presentacion por cada elemento del array.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 9  --------------------------------*/
+        /*Dado un array de 10 numeros, realizar un programa que recorra el array y solo
+muestre los numeros impares.*/
+
         case "9":
             alert("Bienvenidos al Ejercicio 9");
-            alert("");
+            alert("Dado un array de 10 numeros, realizar un programa que recorra el array y solo muestre los numeros impares.");
+
+            let arrayEjercicio9 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+            for (let i = 0; i < arrayEjercicio9.length; i++) {
+                if (arrayEjercicio9[i] % 2 !== 0) {
+                    console.log(arrayEjercicio9[i]);
+                    alert("Mostrando el Resultado por Consola F12.");
+                }
+            }
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
@@ -320,7 +335,7 @@ que muestre un mensaje de presentacion por cada elemento del array.*/
             break;
 
         default:
-            alert("Debes ingresar un numero del 1 al 13 para ver el Ejercicio, vuelve a cargar la pagina con F5");
+            alert("Debes ingresar un numero del 1 al 16 para ver el Ejercicio, vuelve a cargar la pagina con F5");
             break;
     }
 }, 1000);
