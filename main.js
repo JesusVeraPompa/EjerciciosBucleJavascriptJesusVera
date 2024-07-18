@@ -42,15 +42,21 @@ document.write(
     "<br><strong>Ejercicio 10</strong><br>Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0."
 );
 
-document.write("<br><strong>Ejercicio 11</strong><br>Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas grande.");
+document.write(
+    "<br><strong>Ejercicio 11</strong><br>Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas grande."
+);
 
-document.write("<br><strong>Ejercicio 12</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 12</strong><br>Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas chico."
+);
 
 document.write("<br><strong>Ejercicio 13</strong><br>");
 
-document.write("<br><strong>Ejercicio 14</strong><br>");
+document.write("<br><strong>Ejercicio 14</strong><br>Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado.");
 
-document.write("<br><strong>Ejercicio 15</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 15</strong><br>Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado pero invertido."
+);
 
 document.write("<br><strong>Ejercicio 16</strong><br>");
 
@@ -345,12 +351,29 @@ numero mas grande.*/
             alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 12  --------------------------------*/
+        /*Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
+numero mas chico.*/
+
         case "12":
             alert("Bienvenidos al Ejercicio 12");
-            alert("");
+            alert("Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas chico.");
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            let arrayEjercicio12 = [1, 4, 6, 8, 2, 15, 4, 66, 20];
+            let minimo = arrayEjercicio12[0];
+
+            for (let i = 1; i < arrayEjercicio12.length; i++) {
+                if (arrayEjercicio12[i] < minimo) {
+                    minimo = arrayEjercicio12[i];
+                }
+            }
+
+            console.log(`El numero mas chico del array es: ${minimo}`);
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
+
+        /*-----------------------------------  Ejercicio 13  --------------------------------*/
 
         case "13":
             alert("Bienvenidos al Ejercicio 13");
@@ -359,18 +382,51 @@ numero mas grande.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 14  --------------------------------*/
+        /*Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado.*/
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
         case "14":
             alert("Bienvenidos al Ejercicio 14");
-            alert("");
+            alert("Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado.");
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            for (let i = 1; i <= 5; i++) {
+                let asteriscos = "";
+                for (let j = 0; j < i; j++) {
+                    asteriscos += "*";
+                }
+                console.log(asteriscos);
+            }
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
+
+        /*-----------------------------------  Ejercicio 15  --------------------------------*/
+        /*Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado 
+pero invertido.*/
+        // *****
+        // ****
+        // ***
+        // **
+        // *
 
         case "15":
             alert("Bienvenidos al Ejercicio 15");
-            alert("");
+            alert("Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado pero invertido.");
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            for (let i = 5; i >= 1; i--) {
+                let asteriscos = "";
+                for (let j = 0; j < i; j++) {
+                    asteriscos += "*";
+                }
+                console.log(asteriscos);
+            }
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
         case "16":
