@@ -38,7 +38,7 @@ document.write(
     "<br><strong>Ejercicio 9</strong><br>Dado un array de 10 numeros, realizar un programa que recorra el array y solo muestre los numeros impares."
 );
 
-document.write("<br><strong>Ejercicio 10</strong><br>");
+document.write("<br><strong>Ejercicio 10</strong><br>Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0.");
 
 document.write("<br><strong>Ejercicio 11</strong><br>");
 
@@ -285,9 +285,37 @@ muestre los numeros impares.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 10  --------------------------------*/
+        /*Realizar un programa que permita la entrada de numeros y calcule la suma de los
+numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando
+el usuario ingresa un 0.*/
+
         case "10":
             alert("Bienvenidos al Ejercicio 10");
-            alert("");
+            alert("Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0.");
+
+            let sumaPares = 0;
+            let sumaImpares = 0;
+
+            while (true) {
+                let numero = parseInt(prompt("Ingrese un numero (0 para terminar):"));
+
+                if (numero === 0) {
+                    break;
+                }
+
+                if (numero % 2 === 0) {
+                    sumaPares += numero;
+                } else {
+                    sumaImpares += numero;
+                }
+            
+            }
+
+            alert("Mostrando el Resultado por Consola F12.");
+
+            console.log(`La suma de los numeros pares es: ${sumaPares}`);
+            console.log(`La suma de los numeros impares es: ${sumaImpares}`);
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
