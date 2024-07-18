@@ -58,7 +58,9 @@ document.write(
     "<br><strong>Ejercicio 15</strong><br>Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado pero invertido."
 );
 
-document.write("<br><strong>Ejercicio 16</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 16</strong><br>Dado un array de 10 numeros desordenados, realizar un programa que imprima por pantalla el array ordenado. (NO USAR SORT, solo ciclos FOR)"
+);
 
 //  Pedimos leer todos los ejercicios
 alert("A continuación, lee todos los Ejercicios y luego ingresa el numero del Ejercicio a Observar");
@@ -429,11 +431,35 @@ pero invertido.*/
             alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 16  --------------------------------*/
+        /*Dado un array de 10 numeros desordenados, realizar un programa que imprima por
+pantalla el array ordenado. (NO USAR SORT, solo ciclos FOR)*/
+
         case "16":
             alert("Bienvenidos al Ejercicio 16");
-            alert("");
+            alert(
+                "Dado un array de 10 numeros desordenados, realizar un programa que imprima por pantalla el array ordenado. (NO USAR SORT, solo ciclos FOR)"
+            );
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            let arrayEjercicio16 = [2, 5, 8, 1, 7, 6, 4, 3, 9, 10];
+
+            for (let i = 0; i < arrayEjercicio16.length - 1; i++) {
+                //console.log(arrayEjercicio16[i]);
+                for (let j = 0; j < arrayEjercicio16.length - 1 - i; j++) {
+                    //console.log(arrayEjercicio16[j]);
+                    if (arrayEjercicio16[j] > arrayEjercicio16[j + 1]) {
+                        let aux = arrayEjercicio16[j];
+                        arrayEjercicio16[j] = arrayEjercicio16[j + 1];
+                        arrayEjercicio16[j + 1] = aux;
+                        //console.log(arrayEjercicio16);
+                        //alert("Ver el Resultado por Consola F12");
+                    }
+                }
+            }
+
+            console.log("Array Ordenado: ", arrayEjercicio16);
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
         default:
