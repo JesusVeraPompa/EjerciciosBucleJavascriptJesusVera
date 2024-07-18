@@ -30,7 +30,9 @@ document.write(
     "<br><strong>Ejercicio 7</strong><br>Dado un array de 10 numeros, realizar un programa que muestre por consola el doble de cada uno de los elementos."
 );
 
-document.write("<br><strong>Ejercicio 8</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 8</strong><br>Dado un array con al menos 5 objetos comprendidos por un grupo familiar, cada objeto representa a 1 persona con al menos 4 propiedades, realizar un programa que muestre un mensaje de presentacion por cada elemento del array."
+);
 
 document.write("<br><strong>Ejercicio 9</strong><br>");
 
@@ -232,9 +234,31 @@ doble de cada uno de los elementos.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 8  --------------------------------*/
+        /*Dado un array con al menos 5 objetos comprendidos por un grupo familiar, cada
+objeto representa a 1 persona con al menos 4 propiedades, realizar un programa
+que muestre un mensaje de presentacion por cada elemento del array.*/
+
         case "8":
             alert("Bienvenidos al Ejercicio 8");
-            alert("");
+            alert(
+                "Dado un array con al menos 5 objetos comprendidos por un grupo familiar, cada objeto representa a 1 persona con al menos 4 propiedades, realizar un programa que muestre un mensaje de presentacion por cada elemento del array."
+            );
+
+            let arrayEjercicio8 = [
+                { nombre: "Juan", apellido: "Perez", edad: 25, profesion: "Developer" },
+                { nombre: "Ana", apellido: "Garcia", edad: 30, profesion: "Diseñadora" },
+                { nombre: "Pedro", apellido: "Jimenez", edad: 35, profesion: "Gerente" },
+                { nombre: "Maria", apellido: "Lopez", edad: 28, profesion: "Recepcionista" },
+                { nombre: "Luis", apellido: "Martinez", edad: 32, profesion: "Comunicador" },
+            ];
+
+            for (let i = 0; i < arrayEjercicio8.length; i++) {
+                console.log(
+                    `Hola! Mi nombre es ${arrayEjercicio8[i].nombre} ${arrayEjercicio8[i].apellido}, tengo ${arrayEjercicio8[i].edad} años y soy ${arrayEjercicio8[i].profesion}.`
+                );
+                alert("Mostrando el Resultado por Consola F12.");
+            }
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
@@ -300,5 +324,3 @@ doble de cada uno de los elementos.*/
             break;
     }
 }, 1000);
-
-//console.log(object);
