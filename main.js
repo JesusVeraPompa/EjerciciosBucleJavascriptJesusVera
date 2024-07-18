@@ -50,7 +50,9 @@ document.write(
     "<br><strong>Ejercicio 12</strong><br>Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas chico."
 );
 
-document.write("<br><strong>Ejercicio 13</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 13</strong><br>Realizar un programa que permita jugar a piedra papel o tijeras, se debera poder ingresar los nombres de 2 jugadores. En el bucle del juego se debera pedir 1 a 1 las manos de cada jugador, y en cada turno se debera seguir jugando solo si se produjo un empate. Caso contrario  mostrar un mensaje con el nombre de la persona ganadora."
+);
 
 document.write("<br><strong>Ejercicio 14</strong><br>Realizar un programa que imprima por consola un triangulo de 5 asteriscos de lado.");
 
@@ -376,10 +378,17 @@ numero mas chico.*/
             break;
 
         /*-----------------------------------  Ejercicio 13  --------------------------------*/
+        /*Realizar un programa que permita jugar a piedra papel o tijeras, se debera poder
+ingresar los nombres de 2 jugadores. En el bucle del juego se debera pedir 1 a 1 las
+manos de cada jugador, y en cada turno se debera seguir jugando solo si se produjo
+un empate. Caso contrario mostrar un mensaje con el nombre de la persona
+ganadora.*/
 
         case "13":
             alert("Bienvenidos al Ejercicio 13");
-            alert("");
+            alert(
+                "Realizar un programa que permita jugar a piedra papel o tijeras, se debera poder ingresar los nombres de 2 jugadores. En el bucle del juego se debera pedir 1 a 1 las manos de cada jugador, y en cada turno se debera seguir jugando solo si se produjo un empate. Caso contrario  mostrar un mensaje con el nombre de la persona ganadora."
+            );
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
