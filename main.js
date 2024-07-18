@@ -26,7 +26,9 @@ document.write(
     "<br><strong>Ejercicio 6</strong><br>Dado un array de 10 elementos, realizar un programa que recorra ese array y muestre un mensaje por consola con cada uno de los elementos del array."
 );
 
-document.write("<br><strong>Ejercicio 7</strong><br>");
+document.write(
+    "<br><strong>Ejercicio 7</strong><br>Dado un array de 10 numeros, realizar un programa que muestre por consola el doble de cada uno de los elementos."
+);
 
 document.write("<br><strong>Ejercicio 8</strong><br>");
 
@@ -192,7 +194,7 @@ y lo logre entender y pues tome parte de la informacion*/
             alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
-        /*-----------------------------------  Ejercicio 5  --------------------------------*/
+        /*-----------------------------------  Ejercicio 6  --------------------------------*/
         /*Dado un array de 10 elementos, realizar un programa que recorra ese array y
 muestre un mensaje por consola con cada uno de los elementos del array.*/
 
@@ -201,9 +203,6 @@ muestre un mensaje por consola con cada uno de los elementos del array.*/
             alert(
                 "Dado un array de 10 elementos, realizar un programa que recorra ese array y muestre un mensaje por consola con cada uno de los elementos del array."
             );
-
-            /*Dado un array de 10 elementos, realizar un programa que recorra ese array y
-muestre un mensaje por consola con cada uno de los elementos del array.*/
 
             let arrayEjercicio6 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
 
@@ -215,9 +214,20 @@ muestre un mensaje por consola con cada uno de los elementos del array.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 7  --------------------------------*/
+        /*Dado un array de 10 numeros, realizar un programa que muestre por consola el
+doble de cada uno de los elementos.*/
+
         case "7":
             alert("Bienvenidos al Ejercicio 7");
-            alert("");
+            alert("Dado un array de 10 numeros, realizar un programa que muestre por consola el doble de cada uno de los elementos.");
+
+            let arrayEjercicio7 = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+            for (let i = 0; i < arrayEjercicio7.length; i++) {
+                console.log(`Doble de elemento ${i + 1}: ${arrayEjercicio7[i] * 2}`);
+                alert("Mostrando el Resultado por Consola F12.");
+            }
 
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
