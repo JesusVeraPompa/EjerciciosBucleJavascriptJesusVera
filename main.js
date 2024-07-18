@@ -38,9 +38,11 @@ document.write(
     "<br><strong>Ejercicio 9</strong><br>Dado un array de 10 numeros, realizar un programa que recorra el array y solo muestre los numeros impares."
 );
 
-document.write("<br><strong>Ejercicio 10</strong><br>Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0.");
+document.write(
+    "<br><strong>Ejercicio 10</strong><br>Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0."
+);
 
-document.write("<br><strong>Ejercicio 11</strong><br>");
+document.write("<br><strong>Ejercicio 11</strong><br>Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas grande.");
 
 document.write("<br><strong>Ejercicio 12</strong><br>");
 
@@ -292,7 +294,9 @@ el usuario ingresa un 0.*/
 
         case "10":
             alert("Bienvenidos al Ejercicio 10");
-            alert("Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0.");
+            alert(
+                "Realizar un programa que permita la entrada de numeros y calcule la suma de los numeros pares por un lado y los impares por otro, el ingreso de dato finaliza cuando el usuario ingresa un 0."
+            );
 
             let sumaPares = 0;
             let sumaImpares = 0;
@@ -309,7 +313,6 @@ el usuario ingresa un 0.*/
                 } else {
                     sumaImpares += numero;
                 }
-            
             }
 
             alert("Mostrando el Resultado por Consola F12.");
@@ -320,11 +323,26 @@ el usuario ingresa un 0.*/
             alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
+        /*-----------------------------------  Ejercicio 11  --------------------------------*/
+        /*Dado un array de 10 numeros, realizar un programa que imprima por pantalla el
+numero mas grande.*/
+
         case "11":
             alert("Bienvenidos al Ejercicio 11");
-            alert("");
+            alert("Dado un array de 10 numeros, realizar un programa que imprima por pantalla el numero mas grande.");
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            let arrayEjercicio11 = [1, 4, 6, 8, 2, 15, 4, 66, 20];
+            let maximo = arrayEjercicio11[0];
+
+            for (let i = 1; i < arrayEjercicio11.length; i++) {
+                if (arrayEjercicio11[i] > maximo) {
+                    maximo = arrayEjercicio11[i];
+                }
+            }
+
+            console.log(`El numero mas grande del array es: ${maximo}`);
+
+            alert("Ver el Resultado por Consola F12, vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
         case "12":
