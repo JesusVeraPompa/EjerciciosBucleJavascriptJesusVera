@@ -390,7 +390,43 @@ ganadora.*/
                 "Realizar un programa que permita jugar a piedra papel o tijeras, se debera poder ingresar los nombres de 2 jugadores. En el bucle del juego se debera pedir 1 a 1 las manos de cada jugador, y en cada turno se debera seguir jugando solo si se produjo un empate. Caso contrario  mostrar un mensaje con el nombre de la persona ganadora."
             );
 
-            alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+            let nombreJugador1 = prompt("Ingrese el Nombre del Primer Jugador:");
+            let nombreJugador2 = prompt("Ingrese el Nombre del Segundo Jugador:");
+
+            while (true) {
+                let manoJugador1 = prompt(`${nombreJugador1}, escoja PIEDRA, PAPEL o TIJERA:`).toUpperCase();
+                let manoJugador2 = prompt(`${nombreJugador2}, escoja PIEDRA, PAPEL o TIJERA:`).toUpperCase();
+
+                if (manoJugador1 === manoJugador2) {
+                    alert("Empate! Intenten de Nuevo");
+                } else if (manoJugador1 == "PIEDRA" && manoJugador2 == "TIJERA") {
+                    alert(nombreJugador1 + " El Primer Jugador, Ha GANADO, PIEDRA destruye TIJERA");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                } else if (manoJugador1 == "TIJERA" && manoJugador2 == "PIEDRA") {
+                    alert(nombreJugador2 + " El Segundo Jugador, Ha GANADO, PIEDRA destruye TIJERA");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                } else if (manoJugador1 == "PAPEL" && manoJugador2 == "PIEDRA") {
+                    alert(nombreJugador1 + " El Primer Jugador, Ha GANADO, PAPEL destruye PIEDRA");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                } else if (manoJugador1 == "PIEDRA" && manoJugador2 == "PAPEL") {
+                    alert(nombreJugador2 + " El Segundo Jugador, Ha GANADO, PAPEL destruye PIEDRA");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                } else if (manoJugador1 == "TIJERA" && manoJugador2 == "PAPEL") {
+                    alert(nombreJugador1 + " El Primer Jugador, Ha GANADO, TIJERA destruye PAPEL");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                } else if (manoJugador1 == "PAPEL" && manoJugador2 == "TIJERA") {
+                    alert(nombreJugador2 + " El Segundo Jugador, Ha GANADO, TIJERA destruye PAPEL");
+                    alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
+                    break;
+                }
+            }
+
+            //alert("Vuelve a cargar la pagina con F5 para ver otro Ejercicio");
             break;
 
         /*-----------------------------------  Ejercicio 14  --------------------------------*/
